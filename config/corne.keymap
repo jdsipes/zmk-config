@@ -50,8 +50,8 @@
     combos {
         compatible = "zmk,combos";
 
-        caps {
-            bindings = <&kp CAPS>;
+        combo_caps_word {
+            bindings = <&caps_word>;
             key-positions = <16 19>;
         };
 
