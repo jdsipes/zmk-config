@@ -33,10 +33,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
-            quick-tap-ms = <230>;
+            quick-tap-ms = <250>;
         };
 
         backspace: backspace {
@@ -55,17 +55,17 @@
             key-positions = <16 19>;
         };
 
-        jk_fix {
+        combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <31 32>;
         };
 
-        under {
+        combo_under {
             bindings = <&kp UNDER>;
             key-positions = <28 31>;
         };
 
-        dash {
+        combo_dash {
             bindings = <&kp MINUS>;
             key-positions = <4 7>;
         };
@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DEL  &kp Q              &kp W             &kp E                     &kp R                  &kp T        &kp Y        &kp U              &kp I             &kp O              &kp P                &kp BACKSPACE
-&kp ESCAPE  &weak LEFT_META A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H        &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &kp SEMICOLON        &hm DOUBLE_QUOTES SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z              &kp X             &kp C                     &kp V                  &kp B        &kp N        &kp M              &kp COMMA         &kp DOT            &kp SLASH            &kp ENTER
-                                            &hm LC(BACKSPACE) ESCAPE  &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &kp RG(RET)
+&kp DEL         &kp Q              &kp W             &kp E                     &kp R                  &kp T        &kp Y        &kp U              &kp I             &kp O              &kp P                 &kp BACKSPACE
+&kp ESCAPE      &weak LEFT_META A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H        &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &weak SEMICOLON RGUI  &hm DOUBLE_QUOTES SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z              &kp X             &kp C                     &kp V                  &kp B        &kp N        &kp M              &kp COMMA         &kp DOT            &kp SLASH             &kp ENTER
+                                                     &hm LC(BACKSPACE) ESCAPE  &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &kp RG(RET)
             >;
 
             label = "home";
@@ -102,7 +102,7 @@
 &trans  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &trans
 &trans  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &trans
 &trans  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &trans
-                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
+                                                 &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
             >;
 
             label = "num";
@@ -111,7 +111,7 @@
         nav {
             bindings = <
 &trans  &kp F1            &kp F2           &kp F3        &kp F4             &kp ESC            &kp LS(H)       &kp PAGE_DOWN  &kp PG_UP     &kp LS(L)  &none  &trans
-&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &trans
+&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LG(V) LG(C)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &trans
 &trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)       &kp LA(TAB)    &none         &kp LA(L)  &none  &trans
                                            &bt BT_CLR    &bt BT_NXT         &trans             &trans          &trans         &trans
             >;
