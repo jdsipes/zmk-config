@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DEL         &kp Q              &kp W             &kp E                     &kp R                  &kp T        &kp Y        &kp U              &kp I             &kp O              &kp P            &backspace
-&kp ESCAPE      &weak LEFT_META A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H        &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &weak RGUI SEMI  &hm DOUBLE_QUOTES SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z              &kp X             &kp C                     &kp V                  &kp B        &kp N        &kp M              &kp COMMA         &kp DOT            &kp SLASH        &kp ENTER
-                                                     &hm LA(BACKSPACE) ESCAPE  &lt 1 BACKSPACE        &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE        &kp RG(RET)
+&kp DEL         &kp Q              &kp W             &kp E                     &kp R                  &kp T        &kp Y      &kp U              &kp I             &kp O              &kp P            &backspace
+&kp ESCAPE      &weak LEFT_META A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H      &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &weak RGUI SEMI  &hm DOUBLE_QUOTES SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z              &kp X             &kp C                     &kp V                  &kp B        &kp N      &kp M              &kp COMMA         &kp DOT            &kp SLASH        &kp ENTER
+                                                     &hm LA(BACKSPACE) ESCAPE  &lt 1 BACKSPACE        &lt 2 RET    &lt 2 TAB  &lt 1 SPACE        &kp RG(RET)
             >;
 
             label = "home";
