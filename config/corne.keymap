@@ -102,7 +102,7 @@
 
             bindings = <
 &kp DEL         &kp Q              &kp W             &kp E                     &kp R                  &kp T        &kp Y      &kp U              &kp I             &kp O              &kp P            &backspace
-&kp ESCAPE      &weak LEFT_META A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H      &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &weak RGUI SEMI  &hm DOUBLE_QUOTES SINGLE_QUOTE
+&kp ESCAPE      &weak LEFT_META A  &weak LEFT_ALT S  &hm LEFT_CONTROL D   &shifthr LEFT_SHIFT F  &kp G        &kp H      &shifthr RSHIFT J  &shifthr RCTRL K  &weak RIGHT_ALT L  &weak RGUI SEMI  &hm DOUBLE_QUOTES SINGLE_QUOTE
 &kp LEFT_SHIFT  &kp Z              &kp X             &kp C                     &kp V                  &kp B        &kp N      &kp M              &kp COMMA         &kp DOT            &kp SLASH        &hm RG(ENTER) ENTER
                                                      &hm LA(BACKSPACE) ESCAPE  &lt 1 DEL              &lt 2 TAB    &lt 2 RET  &lt 1 SPACE        &kp BSPC
             >;
@@ -120,7 +120,7 @@
             bindings = <
 &trans  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &trans
 &trans  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &trans
-&trans  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &trans
+&trans  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &hm PERIOD NUMBER_3  &kp BACKSLASH  &trans
                                                  &m_3g                       &kp LA(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
             >;
 
